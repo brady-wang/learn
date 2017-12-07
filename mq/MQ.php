@@ -124,9 +124,9 @@ class MQ
     {
         //没有连接对象，进行连接 有不管  就不用每次都连接和初始化
         if(!$this->_conn){
-        $this->_conn = new AMQPConnection($this->configs);
-        $this->_conn->connect();
-        $this->init_exchange_queue_route();
+            $this->_conn = new AMQPConnection($this->configs);
+            $this->_conn->connect();
+            $this->init_exchange_queue_route();
         }
     }
 
@@ -170,6 +170,24 @@ class MQ
 
         //绑定交换机
         $this->_queue->bind($this->exchange_name,$this->route_key);
+    }
+
+    /*
+    * rabbitmq连接不变
+    * 重置交换机，队列，路由等配置
+    */
+    public function reset($exchange_name,$queue_name,$route_key)
+    {
+        $this->exchange_name = $exchange_name;
+        $this->queue_name = $queue_name;
+        $this->route_key = $route_key;
+        $this->init();
+    }
+
+    //没啥用
+    public function __sleep() {
+        $this->close();
+        return array_keys(get_object_vars($this));
     }
 
     //关闭连接
@@ -219,6 +237,20 @@ class MQ
             } else {
                 $this->_queue->consume($funcation_name);
             }
+        }
+
+    }
+
+    //手动应答模式
+    public function run_manual()
+    {
+        $this->init();
+        //$data = $this->_queue->get(AMQP_AUTOACK); //如果有传参数，自动应答
+        $data = $this->_queue->get(); //如果有传参数，自动应答
+        if($data){ //不为false 肯定是有对象的
+           return array('queue_obj'=>$this->_queue,'content_boj'=>$data);
+        }else {
+            return false;
         }
 
     }

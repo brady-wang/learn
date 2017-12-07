@@ -69,5 +69,19 @@ function processMessage($envelope, $queue) {
     $b->test();
 }
 
-//$s = $ra->run(array($a,'processMessage'),false);
-$s = $mq->run_auto("processMessage",false);
+//$s = $mq->run(array($a,'processMessage'),false);
+//$s = $mq->run_auto("processMessage",false);
+$res = $mq->run_manual(); //没有拿到数据返回的是false
+
+if($res){
+    $content_obj = $res['content_boj'];
+    $queue_obj = $res['queue_obj'];
+
+    $content = $res['content_boj']->getBody();
+    //进行应答
+    //$obj->ack($res['message']->getDeliveryTag());
+    $queue_obj->ack($content_obj->getDeliveryTag());
+    var_dump($content);
+} else {
+    var_dump("队列为空");
+}
