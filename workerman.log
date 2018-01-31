@@ -1,0 +1,14 @@
+2018-01-31 16:50:25 pid:4261 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 16:50:40 pid:4262 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 16:52:25 pid:4842 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 16:53:00 pid:4842 Workerman[http_test.php] stopping ...
+2018-01-31 16:53:00 pid:4842 Workerman[http_test.php] has been stopped
+2018-01-31 16:53:01 pid:4847 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 16:53:54 pid:4847 Workerman[http_test.php] stopping ...
+2018-01-31 16:53:54 pid:4847 Workerman[http_test.php] has been stopped
+2018-01-31 16:53:56 pid:4852 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 17:00:07 pid:4852 Workerman[http_test.php] stopping ...
+2018-01-31 17:00:07 pid:4852 Workerman[http_test.php] has been stopped
+2018-01-31 17:00:39 pid:4860 Workerman[text_text.php] start in DEBUG mode
+2018-01-31 17:08:51 pid:4860 Workerman[text_text.php] stopping ...
+2018-01-31 17:08:51 pid:4860 Workerman[text_text.php] has been stopped
