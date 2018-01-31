@@ -12,3 +12,34 @@
 2018-01-31 17:00:39 pid:4860 Workerman[text_text.php] start in DEBUG mode
 2018-01-31 17:08:51 pid:4860 Workerman[text_text.php] stopping ...
 2018-01-31 17:08:51 pid:4860 Workerman[text_text.php] has been stopped
+2018-01-31 18:13:57 pid:5100 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 18:15:35 pid:5100 Workerman[http_test.php] stopping ...
+2018-01-31 18:15:35 pid:5100 Workerman[http_test.php] has been stopped
+2018-01-31 18:15:36 pid:5107 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 18:15:38 pid:5109 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:38 pid:5107 worker[none:5109] exit with status 65280
+2018-01-31 18:15:38 pid:5108 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:38 pid:5107 worker[none:5108] exit with status 65280
+2018-01-31 18:15:46 pid:5111 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:46 pid:5107 worker[none:5111] exit with status 65280
+2018-01-31 18:15:47 pid:5113 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:47 pid:5107 worker[none:5113] exit with status 65280
+2018-01-31 18:15:47 pid:5114 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:47 pid:5107 worker[none:5114] exit with status 65280
+2018-01-31 18:15:47 pid:5112 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:47 pid:5107 worker[none:5112] exit with status 65280
+2018-01-31 18:15:47 pid:5115 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:47 pid:5107 worker[none:5115] exit with status 65280
+2018-01-31 18:15:47 pid:5117 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:47 pid:5107 worker[none:5117] exit with status 65280
+2018-01-31 18:15:48 pid:5118 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in /www/wang/workman/http_test.php on line 20"
+2018-01-31 18:15:48 pid:5107 worker[none:5118] exit with status 65280
+2018-01-31 18:15:51 pid:5107 Workerman[http_test.php] stopping ...
+2018-01-31 18:15:51 pid:5107 Workerman[http_test.php] has been stopped
+2018-01-31 18:15:51 pid:5121 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 18:16:17 pid:5121 Workerman[http_test.php] stopping ...
+2018-01-31 18:16:17 pid:5121 Workerman[http_test.php] has been stopped
+2018-01-31 18:16:18 pid:5126 Workerman[http_test.php] start in DEBUG mode
+2018-01-31 18:18:31 pid:5126 Workerman[http_test.php] stopping ...
+2018-01-31 18:18:31 pid:5126 Workerman[http_test.php] has been stopped
+2018-01-31 18:18:31 pid:5131 Workerman[http_test.php] start in DEBUG mode

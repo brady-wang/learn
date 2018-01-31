@@ -17,7 +17,7 @@ $http_worker->count = 4;
 $http_worker->onMessage = function($connection, $data)
 {
     // 向浏览器发送hello world
-    $connection->send('接收到浏览器数据:'.json_encode($data));
+    $connection->send('server:'.json_encode($data['get']));
 };
 
 // 运行worker
