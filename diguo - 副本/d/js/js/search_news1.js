@@ -1,0 +1,1 @@
+function search_check(obj){if(obj.keyboard.value.length==0){alert('请输入搜索关键字');return false;}return true;}document.write("<table border=0 cellpadding=3 cellspacing=1><form name=search_js1 method=post action=\'/diguo/e/search/index.php\' onsubmit=\'return search_check(document.search_js1);\'><tr><td><div align=center>");
