@@ -1,0 +1,12 @@
+{
+    "name": "brady/es",
+    "authors": [
+        {
+            "name": "brady.wang",
+            "email": "brady.wang@qq.com"
+        }
+    ],
+    "require": {
+        "elasticsearch/elasticsearch": "~6.0"
+    }
+}
