@@ -6,4 +6,4 @@
  * Time: 14:10
  */
 $data = $_POST;
-echo json_encode($_SERVER);
+echo ($_SERVER['REMOTE_ADDR']);
